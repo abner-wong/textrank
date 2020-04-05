@@ -1,6 +1,11 @@
 # textrank
 基于TextRank算法实现中文文本的关键词提取和摘要任务，核心计算代码保持与论文一致。
 
+## 原理
+
+TextRank的论文：
+
+> Mihalcea R, Tarau P. TextRank: Bringing order into texts[C]. Association for Computational Linguistics, 2004.
 ___
 ## 依赖
 +jieba >= 0.35
