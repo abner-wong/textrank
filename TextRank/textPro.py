@@ -45,7 +45,7 @@ class Text:
 
             cut_s = self._clean_words(cut_s)
             if no_stopwords:
-                cut_s = [w.strip() for w in cut_s if w.strip() not in STOPWORDS]
+                cut_s = [w for w in cut_s if w not in STOPWORDS]
             words.append(cut_s)
 
         return words
