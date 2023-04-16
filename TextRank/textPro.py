@@ -21,10 +21,10 @@ class Text:
         :param no_stopwords: 是否去停用词
         """
 
-        if not isinstance(text, str):
-            raise ValueError('text type must be str!')
-        elif text is None:
+        if text is None:
             raise ValueError('text should not be none!')
+        elif not isinstance(text, str):
+            raise ValueError('text type must be str!')
 
         self.sents = self._sentence_split(text)
         self.words_pro = self._get_words(self.sents, use_property, no_stopwords)
